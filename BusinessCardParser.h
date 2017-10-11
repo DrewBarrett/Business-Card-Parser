@@ -21,7 +21,7 @@ public:
 
     // getContactInfo()
     // Takes string input and returns an instance of ContactInfo
-    getContactInfo(string document);
+    ContactInfo getContactInfo(string document);
 };
 
 

@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <fstream>
+#include "BusinessCardParser.h"
 
 using namespace std;
 
