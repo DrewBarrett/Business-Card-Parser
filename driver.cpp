@@ -7,6 +7,7 @@
  ********/
 
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -16,5 +17,20 @@ int main(int argc, char *argv[])
         cout << "usage: " << argv[0] << " <filename>\n";
         return 1;
     }
+    
+    ifstream input;
+    input.open(argv[1]);
+    if (!input.is_open()) {
+        cout << "Unable to read file\n";
+        return 2;
+    }
+    string tmp;
+    string total = "";
+    while (getline(input, tmp)) {
+        total += tmp + '\n';
+    }
+    input.close();
+    cout << total;
+
     return 0;
 }
