@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     
+    // Read from file
     ifstream input;
     input.open(argv[1]);
     if (!input.is_open()) {
@@ -31,6 +32,8 @@ int main(int argc, char *argv[])
         total += tmp + '\n';
     }
     input.close();
+
+    // Parse file
     cout << total;
 
     return 0;
