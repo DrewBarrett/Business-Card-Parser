@@ -1,5 +1,5 @@
 #include "BusinessCardParser.h"
 
-ContactInfo BusinessCardParser::getContactInfo() {
+ContactInfo BusinessCardParser::getContactInfo(string document) {
     return ContactInfo();
 }

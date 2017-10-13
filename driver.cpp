@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 
     // Parse file
     cout << total;
-
+    BusinessCardParser bcp = BusinessCardParser();
+    ContactInfo ci = bcp.getContactInfo(total);
     return 0;
 }
