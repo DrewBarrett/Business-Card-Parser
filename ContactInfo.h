@@ -16,7 +16,7 @@ class ContactInfo
 {
 private:
     string m_name;
-    string m_phone;
+    string m_phone = "";
     string m_email;
 
 public:
