@@ -34,8 +34,15 @@ int main(int argc, char *argv[])
     input.close();
 
     // Parse file
-    cout << total;
+    cout << total << endl; 
     BusinessCardParser bcp = BusinessCardParser();
     ContactInfo ci = bcp.getContactInfo(total);
+
+    cout << "==>\n\n";
+
+    cout << "Name: " << ci.getName() << endl;
+    cout << "Phone: " << ci.getPhoneNumber() << endl;
+    cout << "Email: " << ci.getEmailAddress() << endl;
+
     return 0;
 }
