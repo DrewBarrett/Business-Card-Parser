@@ -1,6 +1,5 @@
 # Business Card OCR
 ## Requirements
-1. GCC 7.2 (will work with 6 or higher)
+1. Python 3
 ## Setup
-g++ *.cpp
-./a.out input.txt
+python3 driver.py input.txt
